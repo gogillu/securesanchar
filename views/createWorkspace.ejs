@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Workspace</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <center>
+    <h2 style="color: green"><%= result%></h2>
+    <form method="POST" action="/createWorkspace" enctype="multipart/form-data">
+      <table cellspacing='5' cellpadding='10' border='2'>
+        <tr>
+          <td colspan='2'>
+            <center>
+              <h2>Create Workspace here!!!</h2>
+            </center>
+          </td>
+        </tr>
+
+       
+        <tr>
+          <td>
+            <label>Name</label>
+          </td>
+          <td>
+            <input type="text" placeholder='Enter name' name="w_name" />
+          </td>
+        </tr>
+
+        <!-- password field -->
+        <tr>
+          <td>
+            <label>Creation date</label>
+          </td>
+          <td>
+            <input type="date"  name="creation_date" />
+          </td>
+        </tr>
+
+        <!-- text field -->
+        <tr>
+            <td>
+              <label>Description</label>
+            </td>
+            <td>
+              <textarea rows='5' cols='33' placeholder='Enter Description' name="description"></textarea>
+            </td>
+          </tr>
+  
+           <!-- pic field -->
+        <tr>
+            <td>
+              <label>Profile pic</label>
+            </td>
+            <td>
+              <input type="file" name='icon' />
+            </td>
+         
+
+        <tr>
+          <td>
+            <label>enter user Name</label>
+          </td>
+          <td>
+            <input type='email' name='u_1' placeholder='Enter email' />
+          </td>
+        </tr>
+
+        <tr>
+            <td>
+              <label>enter user Name</label>
+            </td>
+            <td>
+              <input type='email' name='u_2' placeholder='Enter email' />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label>enter user Name</label>
+            </td>
+            <td>
+              <input type='email' name='u_3' placeholder='Enter email' />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label>enter user Name</label>
+            </td>
+            <td>
+              <input type='email' name='u_4' placeholder='Enter email' />
+            </td>
+          </tr>
+          <tr>
+            <td colspan='2'>
+              <center>
+                <input type='submit' value='create' />
+              </center>
+            </td>
+          </tr>
+
+      </table>
+    </form>
+  </center>
+</body>
+
+</html>
